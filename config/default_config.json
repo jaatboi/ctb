@@ -1,0 +1,50 @@
+{
+    "binance": {
+        "api_key": "",
+        "api_secret": "",
+        "testnet": true
+    },
+    "gemini": {
+        "api_key": ""
+    },
+    "perplexity": {
+        "api_key": ""
+    },
+    "twitter": {
+        "api_key": "",
+        "api_secret": "",
+        "access_token": "",
+        "access_token_secret": ""
+    },
+    "symbols": ["BTCUSDT", "ETHUSDT", "BNBUSDT", "ADAUSDT"],
+    "intervals": ["15m", "30m", "45m", "1h"],
+    "default_interval": "45m",
+    "risk_percent": 1.5,
+    "leverage": 5,
+    "model_path": "models/signal_model.pkl",
+    "database_path": "data/trading_bot.db",
+    "plugin_dirs": ["plugins"],
+    "data_source": "enhanced_binance",
+    "sentiment_source": "enhanced_crypto_sentiment",
+    "strategy": "intraday_multi_tf",
+    "api": {
+        "enabled": false,
+        "host": "0.0.0.0",
+        "port": 5000
+    },
+    "notifications": {
+        "telegram": {
+            "enabled": false,
+            "bot_token": "",
+            "chat_id": ""
+        },
+        "email": {
+            "enabled": false,
+            "smtp_server": "",
+            "smtp_port": 587,
+            "username": "",
+            "password": "",
+            "recipients": []
+        }
+    }
+}
